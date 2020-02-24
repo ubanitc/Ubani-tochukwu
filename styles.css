@@ -1,0 +1,61 @@
+body {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,707070+100&1+0,0.64+100 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(112, 112, 112, 0.64) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(112, 112, 112, 0.64) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(112, 112, 112, 0.64) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a3707070',GradientType=1 ); /* IE6-9 */
+}
+.logo-text {
+  color: rgb(230, 230, 230);
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container {
+  margin: 0 50vh;
+}
+.green {
+  width: 30%;
+  height: 50vh;
+  background-color: green;
+  float: left;
+  position: absolute;
+}
+#button-1 {
+  margin-left: 50%;
+}
+.blue {
+  width: 30%;
+  height: 50vh;
+  background-color: blue;
+  float: left;
+  position: absolute;
+}
+
+.display {
+  display: none;
+}
+.next-btn {
+  position: relative;
+}
