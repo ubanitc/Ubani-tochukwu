@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="numberField"
+      value="10"
+      onkeyup="return calculateFn()"
+    />
+    <p>Amount: <span id="result">--</span></p>
+    <button id="plusBtn" onclick="return plusBtnFn()">
+      +
+    </button>
+    <button id="minusBtn" onclick="return minusBtnFn()">
+      -
+    </button>
+
+    <script>
+      let numberField = document.querySelector("#numberField");
+      let result = document.querySelector("#result");
+
+      result.innerText = numberField.value * 50;
+
+      plusBtnFn = () => {
+        //parseint is used here cuz the plus sign in JS is for concatenation, without parseint it will treat the operand as a string and concatenate it with 1, thats not what we want.
+        numberField.value = parseInt(numberField.value) + 1;
+        result.innerText = numberField.value * 50;
+      };
+
+      minusBtnFn = () => {
+        numberField.value -= 1;
+        result.innerText = numberField.value * 50;
+      };
+
+      calculateFn = () => {
+        result.innerText = numberField.value * 50;
+      };
+    </script>
+  </body>
+</html>

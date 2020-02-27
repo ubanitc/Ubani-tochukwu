@@ -1,4 +1,8 @@
+* {
+  font-family: "Roboto";
+}
 body {
+  font-family: "Roboto";
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,707070+100&1+0,0.64+100 */
   background: -moz-linear-gradient(
     left,
@@ -16,6 +20,7 @@ body {
     rgba(112, 112, 112, 0.64) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a3707070',GradientType=1 ); /* IE6-9 */
+  padding: 30px;
 }
 .logo-text {
   color: rgb(230, 230, 230);
@@ -35,7 +40,7 @@ body {
 .container {
   margin: 0 50vh;
 }
-.green {
+/* .green {
   width: 30%;
   height: 50vh;
   background-color: green;
@@ -51,11 +56,268 @@ body {
   background-color: blue;
   float: left;
   position: absolute;
-}
+} */
 
 .display {
   display: none;
 }
 .next-btn {
   position: relative;
+}
+.contestant-img {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  /* margin-left: 30vh; */
+  width: 450px;
+  height: 450px;
+  float: left;
+}
+.form-div {
+  float: left;
+  padding: 0;
+  margin: 0;
+  border: 3px solid white;
+  width: 450px;
+  height: 450px;
+  background-color: #e0e5ec;
+  box-sizing: border-box;
+}
+.form-container {
+  margin: 30px auto 0 auto;
+  max-width: 910px;
+  height: 450px;
+
+  /* border: 4px solid white; */
+}
+.vt {
+  text-align: center;
+  margin: 40px auto 0 auto;
+  width: 220px;
+  font-size: 1.3em;
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 0;
+  align-content: center;
+  justify-content: center;
+  font-family: "Roboto";
+  color: rgb(97, 92, 92);
+  border-color: rgb(97, 92, 92);
+}
+.vx {
+  border: none;
+  color: cornflowerblue;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.vy {
+  color: black;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.vote-count {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.vote-out {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 21px;
+  padding: 8px 0;
+  border-radius: 5px;
+}
+#plusBtn {
+  float: left;
+  padding: 16px;
+  border-radius: 5px;
+}
+#minusBtn {
+  padding: 16px;
+  border-radius: 5px;
+}
+#result {
+  text-align: center;
+  margin: 0 auto;
+}
+.amt-p {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 2rem;
+}
+.min {
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(97, 92, 92);
+  font-size: 0.9em;
+}
+#just {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 12px;
+  display: block;
+  border-radius: 5px;
+}
+svg {
+  align-content: center;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+  padding: 0 10px;
+}
+
+.bin {
+  margin-top: 0;
+}
+.box {
+  /* Basic styling and alignment */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+
+  border-radius: 4px;
+  width: 145px;
+  height: 120px;
+  /* Basic styling and alignment */ /* For Neumorphism Effect */
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  /* For Neumorphism Effect */
+  align-content: center;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  padding: 0 10px;
+
+  border-radius: 5px;
+}
+.box-2 {
+  margin-top: 20px;
+}
+.ban {
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+.jay {
+  position: relative;
+}
+.gimp {
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+.right {
+  text-align: left;
+}
+tr:nth-child(odd) {
+  background-color: #3f3e3e;
+}
+table {
+  width: 100%;
+}
+td {
+  padding: 10px;
+  color: white;
+}
+.mid4 {
+  color: black;
+}
+.justice {
+  margin: 0px auto 0;
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  margin-top: 55px;
+  display: block;
+  border-radius: 5px;
+}
+.upload {
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto 0px auto;
+  width: 400px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: none;
+  color: rgb(112, 109, 109);
+  border: none;
+  border-bottom: 2px solid rgb(112, 109, 109);
+}
+.bank-name {
+  margin: 18px auto 0 auto;
+  border-radius: 5px;
+  display: block;
+  width: 400px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+  color: rgb(112, 109, 109);
+  border: none;
+  border-bottom: 2px solid rgb(112, 109, 109);
+}
+.mado {
+  text-align: center;
+  color: rgb(163, 80, 80);
+  margin: 0 auto;
+}
+
+.bank-name:focus {
+  border: 5px solid;
+  border-color: cornflowerblue;
+}
+.account-name {
+  margin: 18px auto 0 20px;
+  border-radius: 5px;
+  display: block;
+  width: 190px;
+  height: 28px;
+  cursor: pointer;
+  background: none;
+  color: rgb(112, 109, 109);
+  border: none;
+  border-bottom: 2px solid rgb(112, 109, 109);
+  float: left;
+}
+.account-number {
+  margin: 18px 20px 0 auto;
+  border-radius: 5px;
+  display: block;
+  width: 190px;
+  height: 30px;
+  cursor: pointer;
+  background: none;
+  color: rgb(112, 109, 109);
+  border: none;
+  border-bottom: 2px solid rgb(112, 109, 109);
+  float: right;
+}
+.yes {
+  width: 190px;
+}
+.chai {
+  float: left;
+}
+.bros {
+  float: right;
+  margin-right: 30px;
+}
+.account-name:focus {
+  border: 5px solid;
+  border-color: cornflowerblue;
+}
+.account-number:focus {
+  border: 5px solid;
+  border-color: cornflowerblue;
 }
