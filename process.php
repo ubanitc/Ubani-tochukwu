@@ -18,7 +18,7 @@ $amount = $donate;
 $currency = "NGN";
 $txref = $result; // ensure you generate unique references per transaction.
 $PBFPubKey = "FLWPUBK_TEST-80b5bef71e29471e5d4018731227b4d8-X"; // get your public key from the dashboard.
-$redirect_url = "https://localhost/ubani/success.php";
+$redirect_url = "https://missfinesse.herokuapp.com/success.php";
 
 
 
