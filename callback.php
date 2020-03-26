@@ -1,5 +1,9 @@
 <?php
 session_start ();
+$ham = intval($_SESSION['donate']);
+$tam = 50;
+$pam = $ham / $tam;
+$_SESSION['noofvotes'] =$pam;
 $yamcount=3;
 $_SESSION['ricecount'] = $ricecount;
 $curl = curl_init();
