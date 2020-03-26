@@ -5,7 +5,7 @@ $tam = 50;
 $pam = $ham / $tam;
 $_SESSION['noofvotes'] =$pam;
 $yamcount=3;
-$_SESSION['ricecount'] = $ricecount;
+
 $curl = curl_init();
 $reference = isset($_GET['reference']) ? $_GET['reference'] : '';
 if(!$reference){
@@ -49,3 +49,5 @@ if('success' == $tranx->data->status){
 else{
     header ('location: fail.php');
 }
+
+$_SESSION['ricecount'] = $ricecount;
