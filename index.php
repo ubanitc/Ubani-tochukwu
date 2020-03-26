@@ -417,13 +417,13 @@
             </g>
           </svg>
         </a>
-        <form action="process.php" method="post">
+        <form action="initialize.php" method="post">
           <label for="name">Name</label>
           <input type="text" name="name" placeholder="Name">
           <label for="email">Email</label>
           <input type="email" name="email" placeholder="Email">
           <input type="number" name="amountpaid" readonly class="rage">
-          <span id="result1">--</span>
+          
           <button type="submit" name="donate">Submit</button>
         </form>
           
