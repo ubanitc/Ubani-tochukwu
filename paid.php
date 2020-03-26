@@ -2,10 +2,10 @@ thank you for your payment
 
 <?php 
 session_start ();
-$_SESSION['donate'] = $ram;
-$ham = intval($ram);
+echo $_SESSION['donate'];
+$ham = intval($_SESSION['donate']);
 $tam = 50;
 $pam = $ham / $tam;
 echo $pam;
-echo $ram
+
 ?>
