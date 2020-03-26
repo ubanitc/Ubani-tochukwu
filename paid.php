@@ -7,4 +7,5 @@ $ham = intval($ram);
 $tam = 50;
 $pam = $ham / $tam;
 echo $pam;
+echo $ram
 ?>
