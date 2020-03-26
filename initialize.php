@@ -14,7 +14,7 @@ $email = $emails;
 $amount = ($donate * 100);  //the amount in kobo. This value is actually NGN 300
 
 // url to go to after payment
-$callback_url = 'callback.php'; 
+$callback_url = header ('location: callback.php'); 
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => "https://api.paystack.co/transaction/initialize",
