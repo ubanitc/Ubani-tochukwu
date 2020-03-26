@@ -1,5 +1,7 @@
 <?php
-
+session_start ();
+$yamcount=3;
+$_SESSION['ricecount'] = $ricecount;
 $curl = curl_init();
 $reference = isset($_GET['reference']) ? $_GET['reference'] : '';
 if(!$reference){
@@ -37,6 +39,7 @@ if('success' == $tranx->data->status){
   // if the email matches the customer who owns the product etc
   // Give value
   header ('location: paid.php');
+  $ricecount = $yamcount + intval($_SESSION['noofvotes']);
     
 }
 else{
