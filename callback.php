@@ -36,5 +36,9 @@ if('success' == $tranx->data->status){
   // please check other things like whether you already gave value for this ref
   // if the email matches the customer who owns the product etc
   // Give value
-  echo "<h2>Thank you for making a purchase. Your file has bee sent your email.</h2>";
+  header ('location: paid.php');
+    
+}
+else{
+    header ('location: fail.php');
 }
