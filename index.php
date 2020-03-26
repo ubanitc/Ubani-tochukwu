@@ -1,3 +1,8 @@
+
+<?php 
+session_start ();
+$votecount=$donate;
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +35,7 @@
       </div>
       <div class="form-div green" id="vote-form">
         <p class="vt">VOTE FOR CONTESTANT-05</p>
-        <p class="vt vx">Vote Result: 253</p>
+        <p class="vt vx">Vote Result: <?php echo "$votecount"?></p>
         <p class="vt vx vy">Select Number of Votes</p>
 
         <div class="vote-count " id="vte">
@@ -44,7 +49,7 @@
             class="vote-out"
             onkeyup="return calculateFn()"
             onkeypress="return isNumber(event)"
-          />
+          /> 
           <button id="minusBtn" onclick="return minusBtnFn()">
             -
           </button>
@@ -429,7 +434,8 @@
           
       </div>
     </div>
-    <!-- <div class="container">
+    
+        <!-- <div class="container">
       <div class="green" id="green"></div>
       <input
         type="button"

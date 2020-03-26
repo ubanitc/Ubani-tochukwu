@@ -8,6 +8,7 @@ $donate = $_POST['amountpaid'];
 
 }
 
+$_SESSION['donate'] = $donate;
 $curl = curl_init();
 
 $email = $emails;
