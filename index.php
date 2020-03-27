@@ -118,7 +118,7 @@ $_SESSION['no_of_votes'] = $votecount;
           </svg>
   </a>
           <p class="vt">Mode of Payment</p>
-          <p class="vt vx">Vote Result: 253</p>
+          <p class="vt vx">Vote Result: <?php echo "$votecount"?></p>
           <div class="cc">
             
               <a href="#typo" class="clickme" onclick="return thisfn()">
@@ -297,7 +297,7 @@ $_SESSION['no_of_votes'] = $votecount;
           </svg>
         </a>
         <p class="vt">Make Payment</p>
-        <p class="vt vx">Vote Result: 253</p>
+        <p class="vt vx">Vote Result: <?php echo "$votecount"?></p>
         <p class="gimp">Make a payment of &#8358<span id="result1">--</span> into the account below</p>
         <table>
           
@@ -367,7 +367,7 @@ $_SESSION['no_of_votes'] = $votecount;
           </svg>
         </a>
         <p class="vt">Payment Details</p>
-        <p class="vt vx">Vote Result: 253</p>
+        <p class="vt vx">Vote Result: <?php echo "$votecount"?></p>
         <p class="gimp">Fill in depositor's account details of the account. or bank deposit slip details for confirmation.</p>
         <div>
           <form action="Post">
