@@ -54,9 +54,11 @@ $_SESSION['no_of_votes'] = $votecount;
             type="text"
             id="numberField"
             value="10"
+            min="5"
             class="vote-out"
             onkeyup="return calculateFn()"
             onkeypress="return isNumber(event)"
+            
           /> 
           <button id="minusBtn" onclick="return minusBtnFn()">
             -
@@ -387,7 +389,7 @@ $_SESSION['no_of_votes'] = $votecount;
         <div class="form-div payment display" id="typo">
         <a href="#king" class="paymentback">
           <xml version="1.0" encoding="iso-8859-1">
-          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0  -->
           <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
           <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
             y="0px" width="40px" height="50px" viewBox="0 0 248.322 248.322"
@@ -485,6 +487,7 @@ $_SESSION['no_of_votes'] = $votecount;
       minusBtnFn = () => {
         numberField.value -= 1;
         result.innerText = numberField.value * 50;
+        
       };
 
       calculateFn = () => {
@@ -500,12 +503,31 @@ $_SESSION['no_of_votes'] = $votecount;
       
     </script>
     <script>let btnshow = document.getElementById("just");
+           let Btnminus = document.getElementById("minusBtn");
+          let Btnplus = document.getElementById("plusBtn");
       let input = document.getElementById("numberField");
 
       input.addEventListener("keyup", () => {
         if (input.value.length < 2) btnshow.disabled = true;
         else btnshow.disabled = false;
-      });</script>
+      });
+      Btnminus.addEventListener("click", () => {
+        if (input.value.length < 2) btnshow.disabled = true;
+        else btnshow.disabled = false;
+      });
+      Btnplus.addEventListener("click", () => {
+        if (input.value.length < 2) btnshow.disabled = true;
+        else btnshow.disabled = false;
+      });
+      Btnminus.addEventListener("click", () => {
+        if (input.value.length < 2) Btnminus.disabled = true;
+        else Btnminus.disabled = false;
+      });
+      Btnplus.addEventListener("click", () => {
+        if (input.value.length < 2) Btnminus.disabled = true;
+        else Btnminus.disabled = false;
+      });
+      </script>
     <script>
       function isNumber(evt) {
           evt = (evt) ? evt : window.event;
