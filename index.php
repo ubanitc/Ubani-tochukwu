@@ -25,6 +25,7 @@ $_SESSION['no_of_votes'] = $votecount;
       <script src="./jquery.MultiFile.js"></script>
      
     <title>Missfinesse</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <header>
