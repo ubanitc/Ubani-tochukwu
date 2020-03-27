@@ -347,6 +347,9 @@ td {
   #vote-form {
     width: 450px;
   }
+  .form-div {
+    width: 450px;
+  }
 
   .vote-out {
     font-size: 14px;
@@ -361,6 +364,9 @@ td {
     height: 400px;
   }
   #vote-form {
+    width: 450px;
+  }
+  .form-div {
     width: 450px;
   }
 
@@ -379,6 +385,9 @@ td {
   #vote-form {
     width: 420px;
   }
+  .form-div {
+    width: 420px;
+  }
 
   .vote-out {
     font-size: 14px;
@@ -395,6 +404,9 @@ td {
   #vote-form {
     width: 395px;
   }
+  .form-div {
+    width: 395px;
+  }
 
   .vote-out {
     font-size: 14px;
@@ -409,6 +421,9 @@ td {
     height: 400px;
   }
   #vote-form {
+    width: 370px;
+  }
+  .form-div {
     width: 370px;
   }
 
@@ -428,6 +443,9 @@ td {
   #vote-form {
     width: 340px;
   }
+  .form-div {
+    width: 340px;
+  }
 
   .vote-out {
     font-size: 13px;
@@ -443,6 +461,9 @@ td {
     height: 360px;
   }
   #vote-form {
+    width: 320px;
+  }
+  .form-div {
     width: 320px;
   }
 
@@ -465,6 +486,9 @@ td {
   #vote-form {
     width: 300px;
   }
+  .form-div {
+    width: 300px;
+  }
 
   .vote-out {
     font-size: 13px;
@@ -484,6 +508,9 @@ td {
     height: 360px;
   }
   #vote-form {
+    width: 280px;
+  }
+  .form-div {
     width: 280px;
   }
 
