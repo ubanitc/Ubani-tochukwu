@@ -1,7 +1,15 @@
 
 <?php 
 session_start ();
-$votecount=$donate;
+
+include("dbconnect.php");
+
+$query = "SELECT * FROM contestants WHERE id=1";
+$run_query = mysqli_query($connect,$query);
+$main = mysqli_fetch_assoc($run_query);
+ $votecount = $main['no_of_votes'];
+$_SESSION['no_of_votes'] = $votecount;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

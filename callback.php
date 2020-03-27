@@ -1,10 +1,11 @@
 <?php
+include("dbconnect.php");
 session_start ();
 $ham = intval($_SESSION['donate']);
 $tam = 50;
 $pam = $ham / $tam;
 $_SESSION['noofvotes'] =$pam;
-$yamcount=3;
+$yamcount=$_SESSION['no_of_votes'];
 
 $curl = curl_init();
 $reference = isset($_GET['reference']) ? $_GET['reference'] : '';
@@ -43,11 +44,22 @@ if('success' == $tranx->data->status){
   // if the email matches the customer who owns the product etc
   // Give value
   header ('location: paid.php');
-  $ricecount = $yamcount + intval($_SESSION['noofvotes']);
+  $ricecount = intval($yamcount) + intval($_SESSION['noofvotes']);
     
+  $_SESSION['ricecount'] = $ricecount;
+  
+  
+  
+  $fishcount = intval($_SESSION['ricecount']);
+
+  
+  $yes = "UPDATE contestants SET no_of_votes='$fishcount' WHERE id=1";
+  $query2 = mysqli_query($connect,$yes);
 }
 else{
     header ('location: fail.php');
 }
 
-$_SESSION['ricecount'] = $ricecount;
+
+
+

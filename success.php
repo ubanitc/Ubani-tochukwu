@@ -38,6 +38,7 @@ if (isset($_GET['txref'])) {
         if (($chargeResponsecode == "00" || $chargeResponsecode == "0") && ($chargeAmount == $amount)  && ($chargeCurrency == $currency)) {
           header ('location: paid.php');
           
+          
         } else {
         header ('location: fail.php');
 
