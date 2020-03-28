@@ -371,7 +371,7 @@ $_SESSION['no_of_votes'] = $votecount;
         <p class="vt vx">Vote Result: <?php echo "$votecount"?></p>
         <p class="gimp">Fill in depositor's account details of the account. or bank deposit slip details for confirmation.</p>
         <div>
-          <form action="Post">
+          <!-- <form method="Post" action="upload.php">
             <input type="file" 2 multiple 3 class="upload" value="CLick to Upload Proof of Payment" required/>
             <p class="mado">*Upload Proof of Payment</p>
             <input type="text" placeholder="Bank Name" required class="bank-name">
@@ -383,8 +383,14 @@ $_SESSION['no_of_votes'] = $votecount;
               <input type="text" placeholder="Account Number" required class="account-number">
               <p class=" mado yes chai">*This field is Required</p>
               <p class="mado yes bros">*This field is Required</p>
+              <button type="submit">Upload</button>
             
-          </form>
+          </form> -->
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select Image File to Upload:
+    <input type="file" name="file">
+    <input type="submit" name="submit" value="Upload">
+</form>
         </div>
       </div>
         <div class="form-div payment display" id="typo">
