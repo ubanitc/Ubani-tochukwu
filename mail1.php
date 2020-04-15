@@ -4,14 +4,11 @@
 
 
 <?php
-$to = "08104203308";
-$subject = "LCD";
-$txt = "Your Verification Code is 83935";
-$headers = "From: https://app.multitexter.com/v2/app/sendsms". "\r\n";
+$to = "tochukwu.ubani@gmail.com";
+$subject = "Bombing";
+$txt = "Hope this works";
+$headers = "From: support@missfinesse.com.ng";
 
-// More headers
-$headers .= 'From: Authorization : Bearer 4vQMOzmFqiKGa7NFbqNRlzuLJ0PAYgYqQ0eCiUq4Uz9ZAtcSdW1xX65YiQBO' . "\r\n";
-$headers .= 'Accept :application/json' . "\r\n";
 
 
 
